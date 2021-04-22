@@ -46,11 +46,12 @@ def redefine_line(line, next):
     string =  ("{}" + ';' + "{}" + ';' + "{}" + ';' + "{}" + ';' + "{}" + ';' + "{}" + ';' + "{}" + ';' + "{}" + ';' + '{}' + ';' + "\n").format(line[0], line[1], line[2], line[3], line[4],line[5], line[6], line[7], next)
     return string
 
-def make_line(x, df): 
+def make_line(x, df):
     key = df.loc[x, 'Nome do País']
     key_hash = get_hash(key)
 
     with open("test.txt",'r') as f:
+          
         lines = f.readlines()
 
         if lines[key_hash] == 'Sem dados\n':
@@ -82,9 +83,77 @@ def make_line(x, df):
             
         write_in_file(lines)            
 
+def get_line(key):
+    key_hash = get_hash(key)
+  
+    with open("test.txt",'r') as f:
+        lines = f.readlines()
+
+        if lines[key_hash] == 'Sem dados\n':
+            print('Pais não encontrado\n')
+        else:
+            line = lines[key_hash].strip().split(';')
+            ponteiro = line[-2]
+            if line[0] == key:
+                print(lines[key_hash])
+                print('1 busca\n')            
+            else:
+                x=2
+                while ponteiro != 'nan':
+                    key_hash = int(ponteiro)
+                    line = lines[key_hash].strip().split(';')
+                    ponteiro = line[-2]
+                    if line[0] == key:
+                        print(lines[key_hash])
+                        print(x,'buscas\n')
+                        break 
+                    else:
+                        x = x+1
+                if line[0] != key:
+                    print('Pais não encontrado\n',x, 'buscas\n')    
+
+def delete_line(key):
+    key_hash = get_hash(key)
+
+    with open("test.txt",'r') as f:
+        lines = f.readlines()
+        
+        if lines[key_hash] == 'Sem dados\n':
+            print('Pais não encontrado\n')
+        else:
+            line = lines[key_hash].strip().split(';')
+            ponteiro = line[-2]
+            if line[0] == key:
+                lines[key_hash] = 'Sem dados\n'
+                write_in_file(lines)            
+            else:                
+                while ponteiro != 'nan':
+                    anterior = key_hash
+                    key_hash = int(ponteiro)
+                    line = lines[key_hash].strip().split(';')
+                    ponteiro = line[-2]
+                    if line[0] == key:
+                        line = lines[anterior].strip().split(';')
+                        lines[anterior] = redefine_line(line,ponteiro)
+
+                        lines[key_hash] = 'Sem dados\n'
+                        write_in_file(lines)   
+                        break                     
+
 df = iniciar_dados()
+#print(df)
 
 iniciar_arquivo()
 
+#for i in df.index:
+#    key = df.loc[i, 'Nome do País']
+#    print(get_hash(key))
+
 for i in df.index:
-    make_line(i,df)
+  make_line(i,df)
+
+#get_line('El Salvador')
+
+#delete_line('El Salvador')
+
+#get_line('El Salvador')

@@ -1,0 +1,29 @@
+Canadá;Ottawa;América;América do Norte;42;38017693;0.922;1712479.0;
+Bolívia;Sucre;América;América do Sul;29;11469896;0.703;40581.0;
+Guiana Francesa;Caiena;América;América do Sul;94;250109;nan;nan;
+Argentina;Buenos Aires;América;América do sul;14;44938712;0.83;519487.0;
+Peru;Lima;América;América do Sul;196;32131400;0.759;225366.0;
+Ilha Bouvet;nan;América;América do Sul;103;0;nan;nan;
+Groenlândia;Nuuk;América;América do Norte;88;56081;nan;2441.0;
+Belize;Belmopan;América;América Central;25;408487;0.72;1925.0;
+Ilhas Falkland;Stanley;América;América do Sul;117;3198;nan;nan;
+Venezuela;Caracas;América;América do Sul;266;32219521;0.726;98437.0;
+Geórgia do Sul e Sandwich do Sul;nan;América;América do Sul;84;1300;nan;nan;
+Colômbia;Bogotá;América;América do Sul;51;49395678;0.761;330974.0;
+Sem dados
+Uruguai;Montevideu;América;América do Sul;262;3518552;0.808;59651.0;
+Guatemala;Cidade da Guatemala;América;América Central;91;16604026;0.627;78461.0;
+Suriname;Paramaribo;América;América do Sul;243;581372;0.724;3427.0;
+México;Cidade do México;América;América do Norte;166;126577691;0.767;1222053.0;
+Guiana;Georgetown;América;América do Sul;93;782766;0.636;3899.0;
+Estados Unidos;Washington;América;América do Norte;72;329634908;0.92;20580250.0;
+Honduras;Tegucigalpa;América;América Central;99;9158345;0.606;23803.0;
+Equador;Quito;América;América do Sul;66;17479032;0.758;108398.0;
+Chile;Santiago;América;América do Sul;47;19107216;0.847;298180.0;
+Panamá;Cidade do Panamá;América;América Central;192;4218808;0.795;65055.0;
+São Pedro e Miquelon;Saint Pierre;América;América do Norte;226;6008;nan;nan;
+Costa Rica;San José;América;América Central;56;5058007;0.794;60464.0;
+Brasil;Brasília;América;América do Sul;33;211482342;0.761;1867818.0;
+Nicarágua;Manágua;América;América Central;179;6460411;0.631;13118.0;
+Paraguai;Assunção;América;América do Sul;195;7252672;0.724;41854.0;
+Ja teve dados
