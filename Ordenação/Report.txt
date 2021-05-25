@@ -1,0 +1,36 @@
+Bubble Sort
+
+Tempo para DF Ordenado: 0.0050s
+Tempo para DF Desordenado: 22.2330s
+Tempo para DF em Ordem Inversa: 33.6770s
+
+Selection Sort
+
+Tempo para DF Ordenado: 11.9260s
+Tempo para DF Desordenado: 11.9680s
+Tempo para DF em Ordem Inversa: 12.8350s
+
+Insertion Sort
+
+Tempo para DF Ordenado: 0.0090s
+Tempo para DF Desordenado: 9.5180s
+Tempo para DF em Ordem Inversa: 22.6570s
+
+Shell Sort
+
+Tempo para DF Ordenado: 0.1110s
+Tempo para DF Desordenado: 0.1550s
+Tempo para DF em Ordem Inversa: 0.1430s
+
+Merge Sort
+
+Tempo para DF Ordenado: 0.1010s
+Tempo para DF Desordenado: 0.1000s
+Tempo para DF em Ordem Inversa: 0.0860s
+
+Python Sort
+
+Tempo para DF Ordenado: 0.0050s
+Tempo para DF Desordenado: 0.0010s
+Tempo para DF em Ordem Inversa: 0.0020s
+

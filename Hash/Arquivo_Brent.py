@@ -7,7 +7,7 @@ dadosIniciais = 'Sem dados\n'
 dadosDeletados = 'Ja teve dados\n'
 
 def iniciar_dados():
-    database = pd.read_excel('base.xlsx')
+    database = pd.read_excel('Hash\base.xlsx')
 
     df = pd.DataFrame(database)
 

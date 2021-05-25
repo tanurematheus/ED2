@@ -3,7 +3,7 @@ import pandas as pd
 MAX = 29
 
 def iniciar_dados():
-    database = pd.read_excel('base.xlsx')
+    database = pd.read_excel('Hash\base.xlsx')
 
     df = pd.DataFrame(database)
 
